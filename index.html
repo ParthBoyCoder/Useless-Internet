@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Useless Internet: a carefully engineered collection of delightful nonsense.">
+  <title>Useless Internet - Important nonsense</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Useless Internet home"><span class="brand-mark">UI</span><span>Useless<br>Internet</span></a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#playground">Playground</a>
+      <a href="#store">Store</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle theme"><span aria-hidden="true">◐</span></button>
+      <button class="icon-button" id="sound-toggle" type="button" aria-label="Turn sound on" title="Toggle sound"><span aria-hidden="true">♫</span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> The internet's least productive corner</p>
+        <h1>Nothing to do.<br><em>Perfect.</em></h1>
+        <p class="hero-lede">A lovingly crafted collection of digital distractions for people who have already refreshed their inbox three times.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#playground">Enter the void <span aria-hidden="true">↓</span></a>
+          <button class="text-button" id="surprise-me" type="button">Surprise me <span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+      <div class="hero-visual reveal delay-1" aria-label="A diagram of a very unnecessary process">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="hero-sticker sticker-a">100%<br><small>pointless</small></div>
+        <div class="hero-sticker sticker-b">certified<br><small>nonsense</small></div>
+        <div class="hero-shape"><span>?</span></div>
+        <div class="hero-caption"><span>Fig. 01</span><span>Thoughts, probably</span></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Useless announcements"><div class="ticker-track"><span>BREAKING: local person achieves nothing</span><b>✳</b><span>Now with 12% more buttons</span><b>✳</b><span>Experts say: why not</span><b>✳</b><span>BREAKING: local person achieves nothing</span><b>✳</b><span>Now with 12% more buttons</span></div></section>
+
+    <section class="section-wrap playground" id="playground">
+      <div class="section-heading reveal"><div><p class="eyebrow">01 / The playground</p><h2>Choose your<br><em>distraction.</em></h2></div><p>Six tiny portals away from whatever you were supposed to be doing.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card button-card reveal delay-1" id="the-button">
+          <div class="card-top"><span class="card-number">01</span><span class="tag">Highly reactive</span></div>
+          <div class="button-stage"><button class="big-button" id="big-button" type="button"><span class="button-face">DO NOT<br>PRESS</span><span class="button-sub">(seriously)</span></button><div class="click-burst" aria-hidden="true"></div></div>
+          <div class="card-copy"><h3>The Button</h3><p>It does something different every time. Probably.</p><p class="micro-copy" id="button-result" aria-live="polite">It is waiting for you to make a questionable choice.</p></div>
+        </article>
+
+        <article class="feature-card excuse-card reveal delay-2" id="excuses">
+          <div class="card-top"><span class="card-number">02</span><span class="tag">Socially useful-ish</span></div>
+          <div class="card-copy"><h3>Excuse generator</h3><p>For when the truth is simply not dramatic enough.</p></div>
+          <div class="select-row"><label for="excuse-category">Situation</label><select id="excuse-category"><option value="late">Being late</option><option value="messages">Ignoring messages</option><option value="responsibility">Avoiding responsibility</option></select></div>
+          <div class="output-box"><span class="quote-mark">“</span><p id="excuse-output" aria-live="polite">My calendar developed a personal grudge against me.</p></div>
+          <div class="card-actions"><button class="button button-small" id="new-excuse" type="button">Generate excuse <span aria-hidden="true">↗</span></button><button class="copy-button" id="copy-excuse" type="button" title="Copy excuse"><span aria-hidden="true">▣</span><span class="sr-only">Copy excuse</span></button></div>
+        </article>
+
+        <article class="feature-card counter-card reveal" id="counter">
+          <div class="card-top"><span class="card-number">03</span><span class="tag">Progress, technically</span></div>
+          <div class="counter-main"><span class="counter-value" id="counter-value">0</span><span class="counter-label">useless clicks</span></div>
+          <div class="progress-track"><span id="counter-progress"></span></div><p class="milestone" id="counter-title">The Uninitiated</p>
+          <button class="button button-dark" id="counter-click" type="button">Add one pointless click <span aria-hidden="true">+</span></button>
+          <p class="micro-copy" id="counter-message" aria-live="polite">Your progress is being archived nowhere.</p>
+        </article>
+
+        <article class="feature-card randomness-card reveal delay-1" id="randomness">
+          <div class="card-top"><span class="card-number">04</span><span class="tag">Peer reviewed</span></div>
+          <div class="card-copy"><h3>Randomness machine</h3><p>For ideas nobody asked for.</p></div>
+          <div class="random-output" id="random-output" aria-live="polite"><span class="output-label">Today's unnecessary fact</span><strong>Octopuses have three hearts, and still manage to avoid your group chat.</strong></div>
+          <div class="random-controls"><button class="button button-small button-outline" id="randomize" type="button"><span class="random-button-label">Make it weirder</span> <span aria-hidden="true">✳</span></button><button class="shuffle-button" id="random-again" type="button" title="Generate another random thing"><span aria-hidden="true">↻</span><span class="sr-only">Generate another random thing</span></button></div>
+        </article>
+        <article class="feature-card fortune-card reveal" id="fortune">
+          <div class="card-top"><span class="card-number">06</span><span class="tag">Unverified</span></div>
+          <div class="card-copy"><h3>Fortune, probably</h3><p>A personal prophecy with absolutely no legal standing.</p></div>
+          <div class="fortune-paper" id="fortune-paper" aria-live="polite"><span>Your future contains</span><strong>an oddly specific snack.</strong></div>
+          <button class="button button-small button-dark" id="fortune-button" type="button">Reveal my fate <span aria-hidden="true">→</span></button>
+        </article>
+        <article class="feature-card mood-card reveal delay-1" id="mood-machine">
+          <div class="card-top"><span class="card-number">07</span><span class="tag">Scientifically vague</span></div>
+          <div class="mood-orb" id="mood-orb"><span>?</span></div>
+          <div class="mood-copy"><div><h3>Vibe detector</h3><p id="mood-result" aria-live="polite">Pointing at: suspiciously capable.</p></div><button class="round-action" id="mood-button" type="button" title="Detect my vibe">↯<span class="sr-only">Detect my vibe</span></button></div>
+        </article>
+
+        <article class="feature-card pet-card reveal delay-2" id="pet-rock">
+          <div class="card-top"><span class="card-number">05</span><span class="tag">Needs very little</span></div>
+          <div class="pet-layout"><div class="rock-wrap"><div class="rock-face" id="rock-face"><span class="rock-eye left"></span><span class="rock-eye right"></span><span class="rock-mouth"></span></div><span class="rock-shadow"></span></div><div class="pet-info"><h3 id="pet-name">Pebble</h3><p id="pet-status" aria-live="polite">Pebble is judging your posture.</p><div class="pet-actions"><button class="round-action" id="feed-rock" type="button" title="Feed Pebble">☕<span class="sr-only">Feed rock</span></button><button class="round-action" id="compliment-rock" type="button" title="Compliment Pebble">♥<span class="sr-only">Compliment rock</span></button><button class="round-action" id="ignore-rock" type="button" title="Ignore Pebble">…<span class="sr-only">Ignore rock</span></button></div></div></div><button class="rename-button" id="rename-rock" type="button">Rename your rock <span aria-hidden="true">↗</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="store-section" id="store">
+      <div class="section-wrap"><div class="section-heading store-heading reveal"><div><p class="eyebrow">02 / The useless store</p><h2>Spend nothing.<br><em>Receive less.</em></h2></div><p>All products are fictional. All satisfaction is self-generated.</p></div>
+        <div class="store-grid">
+          <article class="product-card reveal"><div class="product-art air-art"><span>PREMIUM</span><strong>AIR</strong><small>limited atmosphere</small></div><div class="product-info"><div><h3>Premium air</h3><p>Now with invisible bubbles.</p></div><button class="buy-button" type="button" data-product="Premium air">Get it <span aria-hidden="true">↗</span></button></div></article>
+          <article class="product-card reveal delay-1"><div class="product-art sock-art"><span>ONE SIZE</span><strong>INVISIBLE<br>SOCKS</strong><small>pair not included</small></div><div class="product-info"><div><h3>Invisible socks</h3><p>For feet you cannot see.</p></div><button class="buy-button" type="button" data-product="Invisible socks">Get it <span aria-hidden="true">↗</span></button></div></article>
+          <article class="product-card reveal delay-2"><div class="product-art sub-art"><span>MONTHLY</span><strong>SUBSCRIPTION-<br>FREE SUBSCRIPTION</strong><small>cancel anytime, never</small></div><div class="product-info"><div><h3>Subscription-free subscription</h3><p>Nothing recurs, ever.</p></div><button class="buy-button" type="button" data-product="Subscription-free subscription">Get it <span aria-hidden="true">↗</span></button></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-wrap" id="about"><div class="about-mark">UI<span>®</span></div><div class="about-copy"><p class="eyebrow">03 / A brief explanation</p><h2>Made with zero<br><em>commercial intent.</em></h2><p>Useless Internet is an independent collection of tiny nonsense machines. No accounts. No tracking. No productivity. Just a quiet place to click something and feel a little better about it.</p><button class="text-button" id="reset-data" type="button">Forget everything <span aria-hidden="true">↗</span></button></div></section>
+  </main>
+  <footer class="footer section-wrap"><span>© 2026 Useless Internet</span><span class="credit">Made with questionable taste by <strong>Parthib Banerjee</strong> <i aria-hidden="true">✳</i></span><a href="#top">Back to top ↑</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
